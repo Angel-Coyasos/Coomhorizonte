@@ -1,0 +1,194 @@
+
+:root {
+    --color-principal: #1d7a1d;
+    --color-secundario: #e1e1e1
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 250px;
+    min-width: 320px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(207.8deg, #83872d 10.69%, #eeeeee 100%);
+}
+
+
+.header-container__logo {
+    position: relative;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 80px;
+    margin-top: 15px;
+    background-image: url(../img/logo/logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container__title {
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    
+
+}
+
+.header-container__bottom {
+    display: flex;
+    position: absolute;
+    top: 225px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-secundario);
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    text-decoration: none;
+}
+.header-container__bottom a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+main .main-container-beneficios {
+    display: flex;
+    flex-direction: column;
+    background-color: #b6c476;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+main .main-container-beneficios .beneficies-title {
+    padding: 15px;
+}
+
+main .main-container-beneficios .beneficies-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+
+}
+
+main .main-container-beneficios .beneficies-sections .beneficies {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(207.8deg, #83872d 10.69%, #eeeeee 100%);
+}
+
+
+aside {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    height: 450px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    background-color: #FAF8F7;
+}
+
+aside .section-info-container {
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+aside .section-info-container .section-mision {
+    min-width: 250px;
+    height: 380px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background: linear-gradient(207.8deg, #eeeeee 10.69%, #83872d 100%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+aside .section-info-container .section-historia {
+    min-width: 250px;
+    height: 380px;
+    scroll-snap-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: linear-gradient(207.8deg, #eeeeee 10.69%, #83872d 100%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+aside .section-info-container .section-vision {
+    min-width: 250px;
+    height: 380px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: linear-gradient(207.8deg, #eeeeee 10.69%, #83872d 100%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+aside .section-info-container .text-secundary h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+aside .section-info-container .text-secundary article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    background: linear-gradient(207.8deg, #eeeeee 10.69%, #83872d 100%);
+}
+footer .section-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-width: 250px;
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(207.8deg, #83872d 10.69%, #eeeeee 100%);
+    border-radius: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
